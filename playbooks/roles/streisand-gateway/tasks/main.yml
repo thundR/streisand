@@ -44,7 +44,7 @@
   register: streisand_gateway_password
 
 - name: Install the required package for the htpasswd command
-  apt: name=apache2-utils
+  pacman: name=apache2-utils
 
 - name: Generate the htpasswd file
   command: htpasswd -b -c {{ streisand_gateway_htpasswd_file }} {{ streisand_gateway_username }} {{ streisand_gateway_password.stdout }}

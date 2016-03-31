@@ -1,6 +1,6 @@
 ---
 - name: Install sslh
-  apt: name=sslh
+  pacman: name=sslh
 
 - name: Generate the sslh port multiplexer configuration file
   template: src=sslh.j2

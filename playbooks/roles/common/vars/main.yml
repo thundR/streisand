@@ -9,20 +9,7 @@ streisand_common_packages:
   - gnupg
   # Used to configure firewall rules
   - iptables
-  # Used for documentation generation
-  - markdown
-  # Ensures the server's clock is set properly
-  - ntp
-  # Required for the apt_repository module
-  - python-software-properties
-  # Used to generate convenient QR codes for mobile clients in the
-  # Shadowsocks and Tor roles
-  - qrencode
-  # Used for automatically installing security updates
-  - unattended-upgrades
-  # Word List dictionary used by several roles to generate random
-  # (yet typeable!) passphrases
-  - wamerican-huge
+ 
 
 streisand_gateway_location: "/var/www/streisand"
 

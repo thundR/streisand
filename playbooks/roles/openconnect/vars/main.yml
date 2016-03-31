@@ -4,17 +4,6 @@ ocserv_config_file: "{{ ocserv_path }}/config"
 ocserv_firewall_rule: "iptables -t nat -A POSTROUTING -j MASQUERADE"
 
 ocserv_days_valid: "1825"
-ocserv_dependencies:
-  - expect
-  - gnutls-bin
-  - libev-dev
-  - libgnutls28-dev
-  - libnl-route-3-dev
-  - libpam0g-dev
-  - libreadline-dev
-  - libseccomp-dev
-  - libwrap0-dev
-  - pkg-config
 ocserv_checksum: "sha256:2e083903277ab5f2e5869d2eb3721f0313522edf2ad2c4b844869826d690a5c6"
 ocserv_version: "0.11.1"
 ocserv_compilation_directory: "/usr/local/src/ocserv-{{ ocserv_version }}"

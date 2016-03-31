@@ -1,6 +1,6 @@
 ---
 - name: Install UFW
-  apt: name=ufw
+  pacman: name=ufw
 
 - name: Disable UFW logging
   lineinfile: dest=/etc/ufw/ufw.conf
