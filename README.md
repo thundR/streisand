@@ -10,7 +10,9 @@ Additionally, Arch's package manager is different, though the yaourt script make
 Ansible does support pacman natively, but yaourt support is spotty and has issues with the use of sudo in the yaourt script, since the script doesn't execute with sudo and instead asks for sudo sometime later in the runtime. 
 
 
+
 ### Execution ###
+
 1. Clone the Streisand repository and enter the directory.
 
         git clone https://github.com/jlund/streisand.git && cd streisand
@@ -19,5 +21,14 @@ Ansible does support pacman natively, but yaourt support is spotty and has issue
     ansible-playbook playbooks/streisand.yml
 
 The servers should be accessible using SSH keys, and *root* is used as the connecting user by default (though this is simple to change by updating the streisand.yml file or ansible.cfg file). 
+
+Root access over ssh is not required, and sudo credentials can be passed into ansible with command line arguments:
+      
+      ansible-playbook -K
+
+Additionally, ssh credentials can be entered with:
+      
+      ansible-playbook -k
+
 
 

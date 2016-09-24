@@ -1,0 +1,1 @@
+ansible-playbook -kK -vvvv -i ../inventory -u midas streisand.yml
